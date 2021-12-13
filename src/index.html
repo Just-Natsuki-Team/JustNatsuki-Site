@@ -109,7 +109,7 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet" crossorigin="anonymous" />
 	<link href="style.css" rel="stylesheet" />
 
-	<link rel="preload" href="img/back.jpg" as="image" />
+	<link rel="preload" href="img/classroom-day.png" as="image" />
 </head>
 
 <body>
@@ -123,37 +123,36 @@
 			<div class="back-overlay"></div>
 
 			<div class="title">
-				<h1 i18n="name" id="logo">Satania</h1>
-				<p lang="ja">胡桃沢=サタニキア=マクドウェル</p>
-				<h2 i18n="best-waifu-ever">The best Waifu. <b>Ever.</b></h2>
-	
+				<h1 i18n="name" id="logo">Natsuki</h1>
+				<h2 i18n="best-waifu-ever">The biggest qeeb. <b>Ever.</b></h2>
+
 				<div class="button-container">
 					<span>
-						<a i18n="join-discord" class="button discord" href="https://discord.gg/rC9ebp7"><i class="fab fa-discord"></i>Join the Discord</a><br />
+						<a i18n="join-discord" class="button discord" href="https://discord.gg/B7GcUsK"><i class="fab fa-discord"></i>Join the Discord</a><br />
 						<span id="discord-count" i18n="discord-count">
 							<span id="discord-number"></span> members
 						</span>
 					</span>
-					
-					<span>
+
+					<!-- <span>
 						<a i18n="join-reddit" class="button reddit" href="https://reddit.com/r/satania"><i class="fab fa-reddit-alien"></i>Join the Subreddit</a><br />
 						<span id="reddit-count" i18n="reddit-count">
 							<span id="reddit-number"></span> subscribers
 						</span>
-					</span>
-	
+					</span> -->
+
 					<br />
-					
-					<span i18n="language-warning" class="small translate-only">(These communities use English as their primary language)</span>
+
+					<span i18n="language-warning" class="small translate-only">(This community uses English as its primary language)</span>
 				</div>
-	
+
 				<span i18n="scroll-notice" class="scroll-notice"><i class="fas fa-arrow-down"></i>Scroll to learn more!</span>
-	
+
 				<p style="display: none; /* Now the mobile version is good enough */" i18n="mobile-disclaimer" class="mobile disclaimer">
 					I am really sorry, but the mobile version of this website was kinda rushed and <b>it's really shit</b>, I didn't think anyone would visit it on a phone tbh.
 				</p>
 			</div>
-	
+
 			<div id="translator-mode">
 				<button id="download">Download</button>
 				<button id="upload">Browse…</button>
@@ -162,7 +161,7 @@
 					<option value="json">JSON</option>
 				</select>
 			</div>
-	
+
 			<div class="footer">
 				<div class="language-select">
 					<div id="language-protip" i18n-skip>
@@ -171,7 +170,7 @@
 							Would you like to view this website in <b>English</b>?<br />
 							Use this drop-down to select a language!
 						</span>
-						
+
 						<i id="close-language-protip" class="fas fa-times"></i>
 					</div>
 					<div class="select-wrapper">
@@ -204,73 +203,16 @@
 						</select>
 					</div>
 				</div>
-				
+
 				<div class="credits" i18n="credits">
-					A glorious shitpost by some pizza named <b title="Kenyérlángos">Pizzacus&trade;</b>
+					<i>The after story she deserves. By: </i><b title="Kenyérlángos">The Just Natsuki Team</b>
 				</div>
 			</div>
-	
+
 			<canvas class="snow full canvas-background"></canvas>
 		</div>
-		
-		<div class="music-player-container" id="music-player-container" i18n-group="music-player">
-			<div class="music-player display-intro" id="music-player">
-				<div class="play-controller">
-					<i class="fas fa-play"></i>
-				</div>
-				<div class="intro-text" i18n-group="intro">
-					<b i18n="bold-text">Wanna listen to a devilish song while browsing this page?</b>
-					<span class="small" i18n="small-text">Press the play button on the left!</span>
-				</div>
-
-				<div class="loading">
-					<i class="fas fa-spinner fa-pulse"></i>
-				</div>
-
-				<div class="music-details">
-					<div class="name" i18n-group="metadata">
-						<span class="title" i18n="title">Satania Drop</span>
-						<span class="author" i18n="author">[LIMITED DAYS]</span>
-					</div>
-
-					<div class="countdown small hidden" i18n="countdown">Satania sings in <span id="time-until-satania"></span> seconds.</div>
-					
-					<div class="time-controller">
-						<div class="time-bar">
-							<div class="elapsed">
-								<div class="slider-tip"></div>
-							</div>
-						</div>
-
-						<div class="volume">
-							<i class="fas fa-volume-down"></i>
-
-							<div class="volume-box">
-								<div class="volume-bar">
-									<div class="volume-fill">
-										<div class="volume-tip"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-	
-						<div class="time-progression"></div>
-					</div>
-
-				</div>
-
-			</div>
-	
-			<p i18n="footer">
-				You can also listen on <a href="https://www.youtube.com/watch?v=4NDCOxnHb8o">YouTube</a> and <a href="https://soundcloud.com/limiteddays/satania-drop-free-flp-come-to-my-youtube">SoundCloud</a>.
-			</p>
-
-			<div id="satania-dance"></div>
-
-			<canvas id="sound-visualizer"></canvas>
-		</div>
 	</div>
-	
+
 	<div class="scroll">
 		<div i18n-group="become-a-satania-follower" class="section">
 			<div class="left image">
@@ -519,23 +461,23 @@
 
 		<div class="section">
 			<div class="center" i18n-group="the-others-are-trash">
-				<h2 i18n="large-text">The other characters are trash, no exception.</h2>
-				<p i18n="sub-text">They may be cute, but when you know the facts, they really aren't.</p>
+				<h2 i18n="large-text">Brought to you by:</h2>
+				<p i18n="sub-text">Some real big qebdevs here.</p>
 
 				<div i18n-group="the-others-are-trash" class="compare">
-					<div i18n-group="gabriel" class="character gabriel">
+					<div i18n-group="blizzardsev" class="character blizz">
 						<picture>
-							<source srcset="img/webp/portraits/gabriel.webp" type="image/webp">
-							<img src="img/portraits/gabriel.jpg" />
+							<source srcset="img/portraits/blizzpfp.png" type="image/webp">
+							<img src="img/portraits/blizzpfp.png" />
 						</picture>
 						<div class="name">
-							<span i18n="name">Gabriel</span>
+							<span i18n="name">Blizzardsev</span>
 							<div i18n="name-detail" class="small">
 								Tenma White<br /> <span lang="ja">天真=ガヴリール=ホワイト</span>
 							</div>
 						</div>
 						<ul i18n-group="description">
-							<li i18n="argument-1"><b>Lazy NEET who is 100% unlikeable</b></li>
+							<li i18n="argument-1"><b>Biggest qebweb</b></li>
 							<li i18n="argument-2">No seriously, she has no redeeming qualities</li>
 							<li i18n="argument-3">People only like her because she may be relatable for them</li>
 							<li i18n="argument-4"><b>And being able to relate to Gab is a horrible thing</b></li>
@@ -544,19 +486,19 @@
 						</ul>
 					</div>
 
-					<div i18n-group="raphiel" class="character raphiel">
+					<div i18n-group="multimokia" class="character multi">
 						<picture>
-							<source srcset="img/webp/portraits/sadist.webp" type="image/webp">
-							<img src="img/portraits/sadist.jpg" />
+							<source srcset="img/portraits/multipfp.png" type="image/webp">
+							<img src="img/portraits/multipfp.png" />
 						</picture>
 						<div class="name">
-							<span i18n="name">Raphiel</span>
+							<span i18n="name">multimokia</span>
 							<div i18n="name-detail" class="small">
 								Shiraha Ainsworth<br /> <span lang="ja">白羽=ラフィエル=エインズワース</span>
 							</div>
 						</div>
 						<ul i18n-group="description">
-							<li i18n="argument-1"><b>Is a sadist that only wants others to suffer</b></li>
+							<li i18n="argument-1"><b>Is a booplicate</b></li>
 							<li i18n="argument-2">Isn't likeable in any way either</li>
 							<li i18n="argument-3">Unless you're also a sadist, but then you're a bad person</li>
 							<li i18n="argument-4"><b>Probably has a foot-fetishism</b> (she asked Satania to lick her feet for some melon bread)</li>
@@ -681,7 +623,7 @@
 							</div>
 						</label>
 					</span>
-					
+
 					<span>
 						<input type="checkbox" id="vigne-toogle" class="card-toogle" />
 						<label for="vigne-toogle" i18n-group="vigne" class="card vigne">
@@ -693,7 +635,7 @@
 							</div>
 						</label>
 					</span>
-					
+
 					<span>
 						<input type="checkbox" id="raphiel-toogle" class="card-toogle" />
 						<label for="raphiel-toogle" i18n-group="raphiel" class="card raphiel">
@@ -705,7 +647,7 @@
 							</div>
 						</label>
 					</span>
-					
+
 					<span>
 						<input type="checkbox" id="satania-toogle" class="card-toogle" />
 						<label for="satania-toogle" i18n-group="satania" class="card satania">
