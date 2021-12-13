@@ -245,7 +245,7 @@
 
 	.center {
 		width: 100%;
-		max-width: 1024px;
+		max-width: 100%;
 		text-align: center;
 	}
 
@@ -287,4 +287,8 @@
 			font-weight: 400;
 		}
 	}
+
+    .character {
+        flex:auto;
+    }
 }
