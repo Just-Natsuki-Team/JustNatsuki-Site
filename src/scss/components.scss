@@ -422,7 +422,7 @@ table {
 
 	picture, img {
 		display: none;
-		max-width: 100%;
+		//max-width: 100%;
 		animation-name: image-appear;
 		animation-duration: 2.5s;
 		animation-timing-function: ease-in-out;
@@ -623,13 +623,13 @@ table {
 	}
 }
 
-// EVEN POPE FRANCIS LOVES SATANIA -- I hear he's quite popular in the Bible fandom
+// We're open source!
 .pope-francis {
-	background-image: url('img/pope.jpg');
+	background-image: url('img/oss.jpg');
 	min-height: 50vw !important;
 
 	.has-webp & {
-		background-image: url('img/webp/pope.webp');
+		background-image: url('img/oss.jpg');
 	}
 }
 
