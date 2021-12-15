@@ -103,19 +103,19 @@
 				display: flex;
 				flex-direction: row;
 				align-items: center;
-				
+
 				.time-bar {
 					height: 10px;
 					background: rgba(0,0,0,0.2);
 					border-radius: 10px;
 					width: 100%;
 					cursor: pointer;
-					
+
 					.elapsed {
 						height: 100%;
 						background: #e66;
 						border-radius: 10px 0 0 10px;
-						
+
 						.slider-tip {
 							float: right;
 							width: 10px;
@@ -254,7 +254,7 @@
 			max-width: 450px;
 			margin: auto;
 		}
-		
+
 		p {
 			font-size: 20px;
 			line-height: 24px;
@@ -452,9 +452,10 @@ table {
 		opacity: 1;
 	}
 }
-// COMPARE -- Because the other characters are terrible
+// Profiles
 .compare {
 	display: flex;
+    flex-wrap: wrap;
 	overflow-x: auto;
 	justify-content: center;
 
@@ -467,6 +468,7 @@ table {
 		border: 2px solid #ccc;
 		border-radius: 5px;
 		max-width: 360px;
+        max-height: 620px;
 
 		img {
 			width: 100%;
