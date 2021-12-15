@@ -20,6 +20,8 @@ git clone git@github.com:Pizzacus/satania.moe.git     # If you work with SSH
 npm install   # For NPM users
 yarn install  # For Yarn men of culture
 
+# From there, you'll want to modify node_modules/@fluent/package.json and remove the `"type": "commonJS"` line, otherwise builds will fail
+
 # You can build a static version of the website, all the files go into `dist/`
 npm run build # On NPM or
 yarn build    # On Yarn
