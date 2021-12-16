@@ -10,8 +10,8 @@ This repo is for the people interested in the code
 
 ```bash
 # Clone this repository
-git clone https://github.com/Pizzacus/satania.moe.git # If you work with HTTPS
-git clone git@github.com:Pizzacus/satania.moe.git     # If you work with SSH
+git clone https://github.com/Just-Natsuki-Team/JustNatsuki-Site.git # If you work with HTTPS
+git clone git@github.com:Just-Natsuki-Team/JustNatsuki-Site.git     # If you work with SSH
 
 # Install the dependencies
 npm install   # For NPM users
