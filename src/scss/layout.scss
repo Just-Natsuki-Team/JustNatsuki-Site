@@ -172,15 +172,21 @@
 }
 
 .end {
-	background-image: url("./img/back_end.jpg");
-
+	background-image: url("./img/backdrop.png");
 	.has-webp & {
-		background-image: url("./img/webp/back_end.webp");
+		background-image: url("./img/backdrop.png");
 	}
 
 	.title h2 {
 		margin-top: 30px;
 	}
+
+    .title h2 a {
+        text-decoration: none;
+        padding: 5px 10px 5px 10px;
+        background: rgba(25, 25, 25, 0.8);
+        border-radius: 5px;
+    }
 }
 
 .scroll {
