@@ -4,6 +4,8 @@ This is a website for the Just Natsuki project
 
 This repo is for the people interested in the code
 
+**DO NOT DEVELOP DIRECTLY ON `master`. THE MASTER BRANCH IS SET UP TO AUTO DEPLOY**
+
 ## Special Thanks to
   * All the translators which are normally credited in their respective translations (unless they didn't want to)
 ## Getting started
