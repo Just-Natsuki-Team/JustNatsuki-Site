@@ -1,575 +1,626 @@
 <!DOCTYPE html>
-
 <html lang="en-GB">
-
-<head>
-	<!--
-	Ah, I see that you have opened my  D E V I L I S H   S O U R C E   C O D E
-
-	,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,*,..........*,,*****************************************************&**,****************
-	,,.,,,,,,,,,,,,,,,,,,,,,,,,,,**....***......*...******************************************************,****************
-	,,.,,,,,,,,,,,,,,,,,,,,,,,,,*..,*****.........******************************************,***********.*,/***************
-	,,......................../..*********......*****************************************,.*.,***********,.*,/*************
-	,,,,,,,,,,,,,,,,,,,,,,,,.,,***//////****..**/************************************,.***..,.,*******.*.**.,.,(*,,,,,,,,,,
-	,,,,,,,,,,,,,,,,,,,,,,,(.***///////////.*//////////****************##(************.***.....********....*....,,,,,,,,,,,
-	**********************%,***//////////////#(////////#/////*********/(%%##**********.,**......*********...,.....%,,,,,,,,
-	*************************///////////////##////////%#%/////////////(%%&&%%//***********...*...*********.........,.......
-	/////////////////////***//////////////(##(///////%&&%%#////(%%##%%&&&&&&%%//**********.*.**../*********,........,......
-	/////////////////////**//////////////(%##///////(&&&&&&&&&&&&&&%/#&&&&&&&%///*********,****,.************.*......,,,,,,
-	(((((((/////////////**//////////////#####///////%&&&&&&&&(///%//////////#%////////(*********.,**//////****.*.,.*..,....
-	((((((((////////////**/////////////#####(///////%&&////////////////////(///////((////******.////////////,**.*.*../...
-	(((((((((((((((((((*(/////////////######////////%%/////////////(//////(/////////(#(//////////*////////////////**,*..,,,
-	((((((((((//////////(////////////#######////////#/////////////(////////////////(##(//////////////////#/////////(***.,,,
-	(((((((((((####///*/(#//////////##%####(////////////////////(##/////(,/*///////###(//////////(///////(//////////(***./,
-	(((((((((((#####/(*/(((////////########////////////////////####/////**//*/////####(/////////(////////(#///////////****,
-	(((((((((((((((#((*/,	 ,///###%#####//////////////////####*#//***,,////(///#####////////(#////////(#////////////****
-	(((((((//(((((###((.		*(#########//////////////(//####,*(//*/.,,(///*//(#####////////##////////(#(//////(/////**/
-	((/((((((((#%%%###(		   ########(//////////////((###/.,****(* .,**//*//######///////##(////(///###//////(///(/**(
-	((///(((((%%%%%####			*######(/////(////////(##(....,,**/ * ,,//(*//#%####//////(##/////(///###//////(#////**/
-	((///(((&(%%##(%%%#.			.(####(////(#///////(###..   ,,(*/   *,**(**(######//////###////((///###//////(#/////**
-	(#*******////////(%/			 .####(////##///////(##  (.  .,/*.   .,,/(,*(#(/###(////###(////*(//(####/(///(##//(/**
-	###/***///*..,/////(			  #####///###///////## /%%%%%#,,/	 , .#,,,(/*###(///####///(**///*(##///(//###//(/**
-	////**/////*/,.////(  ..		 .#####//(###(//////#.	.#%%%%%	 .  (./.(***###//####(///**///,*(##//*(//###//(/**
-	/*****///////////(/( ,,,,,,..,,,,.#####//####(//////(		 ,%%%%	  . ,. * */##/#####///.,*/(.,*(##//*(/(###(///**
-	///***///////(###%%# .,,,,,,,,,,*(#####/(#####///(//(			.%%%.  .   . / .,#######//../,(/ .,*###(.*//####(///**
-	///(((*//(#######%##  ,,,,,,,,,,*#############//////(.			  /%%.  *   .  ,*#####/(  .,(.   ,*##(..*/(###(/(//*/
-	/#####((#(########(, .,**	./*((############///////..(#%%%#%%%%%%##(#%%		.,((#(/. .,,. ./%%%%%# ..*#####/////*/
-	#######(((((##%#(## *			 ,#(#########(///(//...........				 . (((.	(%%%%%/. *#....#####/((///*(
-	######((#####&((#(					((######(//////,...........					  .#%%%.	   (  .*#####(/(///**(
-	##########//#((						  (#####///(,*/..........						   ,#%%%(. ....##%###(//////**(
-	#######,/(*(.							  ####////.**..........						   .....,#,...(#####(///////*/(
-	,,,,,,,,&.		 .,,,,..				 .(##(//*../,........					.	  ...........,####%#///////**//
-	,,,,,,%		 ,,,,,,,,,,,*,,,,,,,,****,,. ((#(//*.../.......						   .......... .######(///(///**//
-	,,,,,/	   ,,,,,,,*/*.					 (((///.   *								 ............######///((//**///
-	,,,,,*	  ,**.							 .(((//									   ..........#######//(#(//**///
-	,,,,,*										(((//			   ,						.........######///##(//*////
-	******										,((/*.			  ,, ,*/**,,.				  ....(######/(###//*/////
-	******										,(((/*,			,..,.,.,,*///#(.				.*######/(###(//*(((((
-	(((((							 ..,*,,..  .*((((//,,		   ,...,,,,,,,,//*				.*#######(####(/*((((((
-	*****			   ,,,,,**.				   #(##(/,,,		   ..........*				 .(##########%#(/*///////
-	/////*		   .,*,						  .(##/*,**,,								   .,#############((**(((((((
-	/////(										  ####(**,,/,,.							  .##############%%(**////////
-	******										  ####(%#***,,*,,						/#(##############(#((/*/((((((((
-	******/									   .#%####%%%%****,,**.			   *(&((######(##########(#(#/*//////////
-	******(/								  .* #%%#%###(%%%%%(*****(#(..... ,#(/,,.#&(#######/##########(##//**//////////
-	////////(						   .*.	  .%%%%%%##%%%%%%%%**%%%%%%%%%%%#%@%#########%#///#######((#%/(*////////////
-	/////((((.			  .,,,,*/*,		   . (%%%%%%#(%%%%%%%%(%%%%%%%%%%%%%%%%%%###%##%#///######((,,(#*/////////////
-	((((#(((((				...				.((#%%%%%%#%%%%%%%(%%%%%%%%%%%%%%%%%####%####//######(###/#///////////////
+	<head>
+		<!--
+		KWWWMMMMMMMWNNNNNNXXXKKKKK00KKXXKKK0KK0000KKKKKK000Okkxdoodk0KKKKKXKKKK0000KOxoccdkko;,cOX00XXXXXXXX
+		KNWWWWWMMWWNNNNNXXXXXXXXKKKKKXXXXXXKKKKXXXXXXXKKKXXKKKKKKXKKKXXK00KKKKKKK000OxOOdclxOx:;kXOxKXXXXXKK
+		KNWWWWWWNXKXNNNNNNNNNNXXXXXXXXXXXXXXXXXXXXXXXXXKKKXKKKKKKXXKXXXXXKKKKKKKKKK00Ok0KOo:oxddOXkdOXXXXXKK
+		KNWWWNNNXKXNWWWWWNNXXNNXXXXXXXXXXXXXXXXXXXXXXXXKKKKKXKKKKKXXXNNNXXXXKKKKKKKKK0000KKx:cdkK0olx0XXXXKK
+		0NWWNNNNWWWWWNXKXNXXNNNXXXXXXXXXXXXXXXXXXXXXXXXXXXKKKXXKKKKKXNNXXXXXXXXKKKKKKK00OO00x:l0KkooxOXXXKK0
+		0NNNNXXNWWN0kdxOKKKXNXKKXXXXXXXXXXXXXXXXXXXXXXXXXXXKKKKXKKK00XXNXXXXXXXXXXKK000000OOOkOxdxkkk0XXKKK0
+		0XKXNNNNKkolcd0KKKXXXKXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXKKKKXXXKOOXNXXXKKXXXXXXXKK00000OkOx:lkkkOKXXKK0O
+		kdkXNNN0occokKK0KKK0KXXXXKKKXXXXXXXXXXXXXXXXXXXXXXXXKKKKKXXKKOk0KXKKKKKXXXXXXKKK0OOO0OkxkOkkKXXKKKOx
+		loOXNNXOlco0XK000K00KNNK0KKKXXXXXXXXXXXKKKXXXXXXXXKXXKKXXXK0KX0kkKXKK00KXXXXXXXXKK00000OOkk0XKKK0Odl
+		lx0KXXXkcd0XK000000KXXX00KXKXXXKXXXXXXXKKKKXXXXXXXXXKKKXXXN0OKK0xk0KKK0OKXXXKXXXXKKK0000kk0KK000kooo
+		ok00XXKxd0X000000O0KXK00KXXKXXKKKXXXXXXKKKKKKKXXXXXXKKXNXNXkx0XKOxk0KKKOO0KXXXXXXKKXK0000KKK0Okdlooo
+		O000KK0OKX0O000OOOKXK0OKNNXKKXK0KKXXXXKKKXXKXXXXXXXXKKNNNKkxkOKKOkkOKKK0kk0KKXXXXXXKK0000Oxxdolloodx
+		00OO0KKXNKO00OOOOOKK0O0XNNNXXX00KXXKKXXKXXKXXXXXXNNX0KNX0kxkOO0KOOK00KKKOkkO0KKXXKK0OOOOkdoloddxxkkk
+		0Okk0KKNXOO00OOkkOK0OO0KXNNNNN00XXXXXXXXXXNNXNNNNNNK0KX0kxk0K000OKNX00000kxkO0KXKXKKKKKK00OxxkOkkkkk
+		0kkO0KKNKOO0OOkkkOOOkO0KKKXXNX0KNNNNNNNWWWNXNNNNNKOk0K0kxxx0KOkxkKXX00OOOkOOkkOKXXXKKKKKKK0OxkkOOOOO
+		0Okk0KXX0kO0OkxxxkkkkO00KKXXXKOKNNNNXXNNNNXXXXXKKkxkOkxxdx0XN0xxKNNNXK0kxkKNKOkOKXXKK0KXKK00kxkOkOOO
+		00OkOKXXOk00OkxxxkxxkO0OOKKKK0O0XKKKKKKKKKKKXKKKOxoxxxkxkKNWW0d0WWWMWNXOdkNWWN0kOKXKK0KXKXK0Oxk00Okk
+		XKOkOKXXOk00OxxxxkxxkOOOOO0KKOO0K0xkKXKK0KKXXK0Oxxxxxxxx0XWWNOONWMMMMNNXk0WWMWWX0KXKK00KXKKOkxxOK0Ok
+		NXOkk0XXOk00OxxxxkxxkkOOkkO00kk00x;:d000KXKKK0OkxxxdddxOXWWWNNNWMMMWWWWWKXWMWWWWX0KKKOOKXKKkddxkKK0O
+		WX0kxONN0k00OkxxxkxxkkkkkkOOkxkOOd;,::lkKKK0OkkxddxddxOKNWWWWMMWWWMMWMWWWWWMWWWWNK0KKOkKXKKkodxx0KKO
+		WN0kOKWN0k00OkxxxkxxxkkkkkkOxdkO0Oc:dd:;cldkxkkdddooxOKNWMMWMMMMMMWWWWMMMWWWWWWWWXKKKkdOXK0xldkkOKK0
+		NXkOKXWNKOO00kxxxxxxxxxkkkkkxdk00Oc,oxo:,..,lxdodxxkO0XWWMMMMMWWWWWWWWWWMWWWWWWWWWKK0xokK0OxloOOk0KK
+		X0dkKXWWXOO00Oxdxxxdxxxxxkkxlcllc:,.';;::::ldodkOOO00XWWMWWWWWWWWWWWWNXK000O000KNWX0Odlk0OkxdxKOkOKK
+		KOxokKWNX0O00Oxddxxddxddxxxo;',:ldl';xOkkxkxdxO00000KNWMMWWWWWWWNKxl:,'..''';:d0NWX0kolxOxkOkOK0kkKK
+		K0Oxd0NNNKkO00kooxddoddodddxo:,;lxx:'okxxkkkO00000KKNWWMMWWWWNN0d:;:ldkOO0000XNWWWXkdllxkk000KKOxk0K
+		K0OOOKNXXXOkO00xodddoolldxxddxdc,,:;.;dxOO000000KKXNWWMWMWWWWWKxkKNWWWWWWWWWWWWWWW0ddllxk0XKKKKkokKX
+		kOOO0XX0KX0xkO0Ododdlloxxxdxkkkkdl;''cxOO00000KKKXNWWWWWWWWWWWNNWWWWMWWWWWWWWWWWWXkxdcdOKKKKKK0doOKK
+		okOO0N0kKXKkxO00OdoooxxxxxkkkkkkxdlldkO0000KKKKKNWWWWWWWWWWWWWWWWWWWWWWWWWWNNNNNN0OOdd0KKKKKKKOoo0XK
+		okOk0XOx0XX0xxk0OkddxddxxxxxkkxdoodkkkkO00KKKKXNWWWWWMMWWWWWWWWWWWWWWWWWNNNNXXXNXXKkx0K00KKKKKkokKXK
+		oxOOKKOk0XXKOxxkkkdoodxxxxxxxdlldxkOOO000KKKKXNWWMMMWWMWWWWWWWWWWWWWWWNNNXXXXXXNNN0k00OOKKKKK0xxKKKK
+		lxkO0OkkOXXK0xdxdodxxxxxxxdolldxkOOOOkkkkO0KXXNWWWWWWWMMWWWWWWWWWWWWWWNNNNXXXXNNNX000kk0KKK000OKK0Ok
+		lxkkkkkkkKK0kdlldxkxxxxdollloxkkkxo:,',clxOKXNWWWWWWWWWWWWWWWWWWWWWWWWNNNNNNNNNNX00K0kOKKK0000K0kxdo
+		cdxxkkkxxO0OOxdxkkxxdolc:codkkkxc...;oxOKKXXNWWWWWWWWWWWWWWWWWWWWWWWWNWNNNNNNWWNXKNXOkOK0OOkkkxddooo
+		:lxxxxxxxOK0OOOkxdolccllododkkd;.'cx0KKKKXXNWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWN0xx0K0kkxdxxxxood
+		:oxxxxxxxkOkkxdlc:;;clloxkkxxxddxk0KKKKKKXNWWWWWWNXXNWWWWWWWWWWWWWWWWWWWWWWWWWWWWN0ddOKK0Okxkkxdooxx
+		:oxdddddxxkkxxl::::;;cclodxkxdodxkO0KKKXXNNWWWWWWXXXNWWWWWWWWWWWWNN0OXWWWWWWWWWWNOddk00Okxxkxdooxkkx
+		'cddddddddOK00xlcc:;;::ccodxxxdolok0KKXXNNWWWWWWWWWWWMWWWWWWWNXKOkOkxKWWWWWWWWWKkodkO0kxddxxxllxxxkk
+		.:oooddoddx0XKkoccc:;::::clodxxkkxkkO0KXNNWWWWWWWMMMWWMMWWXOddxkkOOOOKWWWWWWWXOdoxkOOkxdxdckNkcokxxk
+		.:oooooooooOXX0dlllc:cccccccllllloodooxKXNNWWWWMWWWMMWWNOl,.:xOOOOOO0NWWWWWN0dooxkkOOkkkOkkKNOdxOxxk
+		.:oollllloldKXKkolllccccclcclllllllc:clxKNNWWWWMMWMMMWWNOl;,lOOOOO00XWWWWN0xoodxxkkOOOOO0KNNN0dkOxox
+		.;::::ccclcckNX0doooollllllllllooddolccclxKNWMMMMMMMMMMMWWNK0KKKKXNWWWWNKdllodxkkkOOO0KXNNNNNOdxkxod
+		',,,,,;;:l:,l0NXOxdddooooooolllloddxxddxxdk0KXWMMMMMMMMMWWWWWWWWWWWWWNX0l;codxkO0KKXNWMMWWWNXkdxkxol
+		',,,,,,;;cc;,oKXK0kxxdddddddddxdoooxxxxxOOxdlcodxkOO0KXNNNWNNNXXXXXXXKOOdldO0KXNWWMMMMMMMMMWOodxxdoo
+		'''',,,,;;::::xKXOOOkxxddxxdddxkOOOOOOOxolc::;;,,''',;:cccclccclkKKKOxdoxXWWMMMMMMMMMMMMMMNkloxxdoox
+		''''''''''',;;;lOOolxxxxxxxxdddxkkO0Oxdollc::;;;,,,,,,,,'',,,,,oKX0xodxdOWMMMMMMMMMMMMMWXkolddddoodd
+		''...........''',clccodxxxddddddxkkxdooollcc::;;,,,,,,,'',,''';dxc;cxOddXMMMMMMMMMMMMWKkdlodddddoodd
+		'''''''''''''',,,,,;:lxkkkkxxxdxkxxxdoolllcc::;;,;;,,,,....'..''..,:lo:xWMMMMMMMMMWX0xdodddddddooddd
+		'''''''''''',',,,,,,;lxkkOOOOkkkkxxxdoollcc::;;;,,,,,,'..''',,'..,oo:cxXMMMMMMWWX0kdododdddoddoldddd
+		'',,'''''''''',,,;;,:ldkkkkkkkkxxddddoollcc::,,;,,,,,,....':llc,'o0KxcOMMMWNX0Oxdooooooddddddoloddoo
+		'',,,,,,''',,:codkkOO00OkOOkxxxxddddooollccc:;,;,,,,,,....':dkd;:0XXOckWNKOxdooooooooooodddooooddooo
 
 
-	-->
+		-->
 
-	<meta charset="UTF-8" />
+		<meta charset="UTF-8" />
 
-	<meta name="keywords" content="Natsuki, DDLC, Doki, Literature, Club" />
-	<meta name="description" content="Just Natsuki, an after-story style mod for well, just Natsuki!" />
-	<meta name="author" content="Just Natsuki Team" />
-	<meta name="theme-color" content="#EE6666" />
+		<meta name="keywords" content="Natsuki, DDLC, Doki, Literature, Club" />
+		<meta name="description" content="Just Natsuki, an after-story style mod for well, just Natsuki!" />
+		<meta name="author" content="Just Natsuki Team" />
+		<meta name="theme-color" content="#EE6666" />
 
-	<link rel="icon" sizes="192x192" href="favicon.ico" />
-	<link rel="apple-touch-icon" href="./img/favicon.png" />
-	<meta name="msapplication-square310x310logo" content="assets/favicon.png" />
+		<link rel="icon" sizes="192x192" href="favicon.ico" />
+		<link rel="apple-touch-icon" href="./img/favicon.png" />
+		<meta name="msapplication-square310x310logo" content="assets/favicon.png" />
 
-	<meta property="og:title" content="Just Natsuki!" />
-	<meta property="og:url" content="https://justnatsuki.club" />
-	<meta property="og:type" content="website" />
-	<meta property="og:description" content="Trust us, you won't want to go baka after this." />
+		<meta property="og:title" content="Just Natsuki!" />
+		<meta property="og:url" content="https://justnatsuki.club" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="Trust us, you won't want to go baka after this." />
 
-	<meta property="og:image" content="/img/happy_nat.png" />
+		<meta property="og:image" content="/img/happy_nat.png" />
 
-	<!-- <link rel="alternate" href="https://satania.moe/#de" hreflang="de" />
-	<link rel="alternate" href="https://satania.moe/" hreflang="en" />
-	<link rel="alternate" href="https://satania.moe/#es" hreflang="es" />
-	<link rel="alternate" href="https://satania.moe/#et" hreflang="et" />
-	<link rel="alternate" href="https://satania.moe/#fr" hreflang="fr" />
-	<link rel="alternate" href="https://satania.moe/#it" hreflang="it" />
-	<link rel="alternate" href="https://satania.moe/#lv" hreflang="lv" />
-	<link rel="alternate" href="https://satania.moe/#hu" hreflang="hu" />
-	<link rel="alternate" href="https://satania.moe/#id" hreflang="id" />
-	<link rel="alternate" href="https://satania.moe/#nl" hreflang="nl" />
-	<link rel="alternate" href="https://satania.moe/#nb" hreflang="nb" />
-	<link rel="alternate" href="https://satania.moe/#pt-BR" hreflang="pt-BR" />
-	<link rel="alternate" href="https://satania.moe/#pl" hreflang="pl" />
-	<link rel="alternate" href="https://satania.moe/#fi" hreflang="fi" />
-	<link rel="alternate" href="https://satania.moe/#sv" hreflang="sv" />
-	<link rel="alternate" href="https://satania.moe/#tr" hreflang="tr" />
-	<link rel="alternate" href="https://satania.moe/#ru" hreflang="ru" />
-	<link rel="alternate" href="https://satania.moe/#el" hreflang="el" />
-	<link rel="alternate" href="https://satania.moe/#ja" hreflang="ja" />
-	<link rel="alternate" href="https://satania.moe/#ko" hreflang="ko" />
-	<link rel="alternate" href="https://satania.moe/#zh-Hans" hreflang="zh-Hans" /> -->
+		<title>Just Natsuki.</title>
 
-	<title>Just Natsuki.</title>
+		<link href="https://use.typekit.net/tro1mso.css" rel="stylesheet" crossorigin="anonymous" />
+		<link href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" rel="stylesheet" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous" />
 
-	<link href="https://use.typekit.net/tro1mso.css" rel="stylesheet" crossorigin="anonymous" />
-	<link href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" rel="stylesheet" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet" crossorigin="anonymous" />
+		<link href="style.css" rel="stylesheet" />
 
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet" crossorigin="anonymous" />
-	<link href="style.css" rel="stylesheet" />
+		<link rel="preload" href="img/happy_nat.png" as="image" />
+	</head>
+	<body>
+		<!-- Webp support detection for CSS -->
+		<img
+			style="position: absolute;top: -1000px;"
+			src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA"
+			onload="document.body.classList.add('has-webp')" />
+		<div i18n-group="main-intro" class="intro">
+			<div class="main">
+				<div class="back-overlay"></div>
 
-	<link rel="preload" href="img/happy_nat.png" as="image" />
-</head>
+				<div class="title">
+					<h1 i18n="name" id="logo">Natsuki</h1>
+					<h2 i18n="best-waifu-ever">The biggest qeeb. <b>Ever.</b></h2>
 
-<body>
-	<!-- Webp support detection for CSS -->
-	<img
-		style="position: absolute;top: -1000px;"
-		src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA"
-		onload="document.body.classList.add('has-webp')" />
-	<div i18n-group="main-intro" class="intro">
-		<div class="main">
-			<div class="back-overlay"></div>
-
-			<div class="title">
-				<h1 i18n="name" id="logo">Natsuki</h1>
-				<h2 i18n="best-waifu-ever">The biggest qeeb. <b>Ever.</b></h2>
-
-				<div class="button-container">
-					<span>
-						<a i18n="join-discord" class="button discord" href="https://discord.gg/sFxdsCBh94"><i class="fab fa-discord"></i>Join the Discord</a><br />
-						<span id="discord-count" i18n="discord-count">
-							<span id="discord-number"></span> members
-						</span>
-					</span>
-
-					<!-- <span>
-						<a i18n="join-reddit" class="button reddit" href="https://reddit.com/r/satania"><i class="fab fa-reddit-alien"></i>Join the Subreddit</a><br />
-						<span id="reddit-count" i18n="reddit-count">
-							<span id="reddit-number"></span> subscribers
-						</span>
-					</span> -->
-
-					<br />
-
-					<span i18n="language-warning" class="small translate-only">(This community uses English as its primary language)</span>
-				</div>
-
-				<span i18n="scroll-notice" class="scroll-notice"><i class="fas fa-arrow-down"></i>Scroll to learn more!</span>
-
-				<p style="display: none; /* Now the mobile version is good enough */" i18n="mobile-disclaimer" class="mobile disclaimer">
-					I am really sorry, but the mobile version of this website was kinda rushed and <b>it's really shit</b>, I didn't think anyone would visit it on a phone tbh.
-				</p>
-			</div>
-
-			<div id="translator-mode">
-				<button id="download">Download</button>
-				<button id="upload">Browse…</button>
-				<select id="format">
-					<option id="yaml" value="yaml">YAML</option>
-					<option value="json">JSON</option>
-				</select>
-			</div>
-
-			<div class="footer">
-				<div class="language-select">
-					<div id="language-protip" i18n-skip>
-						<span id="language-protip-text" i18n="language-protip">
-							<!-- Note for translators, change "English" to the name of your language of course -->
-							Would you like to view this website in <b>English</b>?<br />
-							Use this drop-down to select a language!
+					<div class="button-container">
+						<span>
+							<a i18n="join-discord" class="button discord" href="https://discord.gg/sFxdsCBh94"><i class="fab fa-discord"></i>Join the Discord</a><br />
+							<span id="discord-count" i18n="discord-count">
+								<span id="discord-number"></span> members
+							</span>
 						</span>
 
-						<i id="close-language-protip" class="fas fa-times"></i>
-					</div>
-					<div class="select-wrapper">
-                        <div class="credits">Help us localize this website! Shoot us a message on <a href="https://discord.gg/B7GcUsK">Discord</a>!</div>
-						<!-- <div i18n="language-select" class="select-button">
+						<!-- <span>
+							<a i18n="join-reddit" class="button reddit" href="https://reddit.com/r/satania"><i class="fab fa-reddit-alien"></i>Join the Subreddit</a><br />
+							<span id="reddit-count" i18n="reddit-count">
+								<span id="reddit-number"></span> subscribers
+							</span>
+						</span> -->
 
-							<i class="fas fa-angle-down"></i>
+						<br />
+
+						<span i18n="language-warning" class="small translate-only">(This community uses English as its primary language)</span>
+					</div>
+
+					<span i18n="scroll-notice" class="scroll-notice"><i class="fas fa-arrow-down"></i>Scroll to learn more!</span>
+
+					<p style="display: none; /* Now the mobile version is good enough */" i18n="mobile-disclaimer" class="mobile disclaimer">
+						I am really sorry, but the mobile version of this website was kinda rushed and <b>it's really shit</b>, I didn't think anyone would visit it on a phone tbh.
+					</p>
+				</div>
+
+				<div id="translator-mode">
+					<button id="download">Download</button>
+					<button id="upload">Browse…</button>
+					<select id="format">
+						<option id="yaml" value="yaml">YAML</option>
+						<option value="json">JSON</option>
+					</select>
+				</div>
+
+				<div class="footer">
+					<div class="language-select">
+						<div id="language-protip" i18n-skip>
+							<span id="language-protip-text" i18n="language-protip">
+								<!-- Note for translators, change "English" to the name of your language of course -->
+								Would you like to view this website in <b>English</b>?<br />
+								Use this drop-down to select a language!
+							</span>
+
+							<i id="close-language-protip" class="fas fa-times"></i>
 						</div>
-						<select id="locale-select" lang="mul">
-							<option disabled title="Indonesian" value="id" lang="id">Bahasa</option>
-							<option disabled title="German" value="de" lang="de">Deutsch</option>
-							<option title="English" value="en-GB" lang="en-GB">English</option>
-							<option disabled title="Spanish" value="es" lang="es">Español</option>
-							<option disabled title="Estonian" value="et" lang="et">eesti</option>
-							<option disabled title="French" value="fr" lang="fr">Français</option>
-							<option disabled title="Italian" value="it" lang="it">Italiano</option>
-							<option disabled title="Latvian" value="lv" lang="lv">latviešu</option>
-							<option disabled title="Hungarian" value="hu" lang="hu">magyar</option>
-							<option disabled title="Dutch" value="nl" lang="nl">Nederlands</option>
-							<option disabled title="Norwegian" value="nb" lang="nb">Norsk</option>
-							<option disabled title="Portuguese" value="pt-BR" lang="pt-BR">Português</option>
-							<option disabled title="Polish" value="pl" lang="pl">Polski</option>
-							<option disabled title="Finnish" value="fi" lang="fi">suomi</option>
-							<option disabled title="Swedish" value="sv" lang="sv">svenska</option>
-							<option disabled title="Turkish" value="tr" lang="tr">Türkçe</option>
-							<option disabled title="Russian" value="ru" lang="ru">Русский</option>
-							<option disabled title="Greek" value="el" lang="el">Ελληνικά</option>
-							<option disabled title="Japanese" value="ja" lang="ja">日本語</option>
-							<option disabled title="Korean" value="ko" lang="ko">한국어</option>
-							<option disabled title="Chinese (Simplified)" value="zh-Hans" lang="zh-Hans">简体中文</option>
-						</select> -->
+						<div class="select-wrapper">
+							<div class="credits">Help us localize this website! Shoot us a message on <a href="https://discord.gg/B7GcUsK">Discord</a>!</div>
+							<!-- <div i18n="language-select" class="select-button">
+
+								<i class="fas fa-angle-down"></i>
+							</div>
+							<select id="locale-select" lang="mul">
+								<option disabled title="Indonesian" value="id" lang="id">Bahasa</option>
+								<option disabled title="German" value="de" lang="de">Deutsch</option>
+								<option title="English" value="en-GB" lang="en-GB">English</option>
+								<option disabled title="Spanish" value="es" lang="es">Español</option>
+								<option disabled title="Estonian" value="et" lang="et">eesti</option>
+								<option disabled title="French" value="fr" lang="fr">Français</option>
+								<option disabled title="Italian" value="it" lang="it">Italiano</option>
+								<option disabled title="Latvian" value="lv" lang="lv">latviešu</option>
+								<option disabled title="Hungarian" value="hu" lang="hu">magyar</option>
+								<option disabled title="Dutch" value="nl" lang="nl">Nederlands</option>
+								<option disabled title="Norwegian" value="nb" lang="nb">Norsk</option>
+								<option disabled title="Portuguese" value="pt-BR" lang="pt-BR">Português</option>
+								<option disabled title="Polish" value="pl" lang="pl">Polski</option>
+								<option disabled title="Finnish" value="fi" lang="fi">suomi</option>
+								<option disabled title="Swedish" value="sv" lang="sv">svenska</option>
+								<option disabled title="Turkish" value="tr" lang="tr">Türkçe</option>
+								<option disabled title="Russian" value="ru" lang="ru">Русский</option>
+								<option disabled title="Greek" value="el" lang="el">Ελληνικά</option>
+								<option disabled title="Japanese" value="ja" lang="ja">日本語</option>
+								<option disabled title="Korean" value="ko" lang="ko">한국어</option>
+								<option disabled title="Chinese (Simplified)" value="zh-Hans" lang="zh-Hans">简体中文</option>
+							</select> -->
+						</div>
+					</div>
+
+					<div class="credits" i18n="credits">
+						<i>The after story she deserves. By: </i><b title="Kenyérlángos">The Just Natsuki Team</b>
 					</div>
 				</div>
 
-				<div class="credits" i18n="credits">
-					<i>The after story she deserves. By: </i><b title="Kenyérlángos">The Just Natsuki Team</b>
-				</div>
-			</div>
-
-			<canvas class="snow full canvas-background"></canvas>
-		</div>
-	</div>
-
-	<div class="scroll">
-		<div i18n-group="become-a-satania-follower" class="section">
-			<div class="left image">
-				<picture>
-					<source srcset="img/pouty_nat.png" type="image/png">
-					<img src="img/pouty_nat.png" alt="" height="500"/>
-				</picture>
-			</div>
-
-			<div class="right">
-				<h2 i18n="large-text">Introducing: Just Natsuki!</h2>
-				<p i18n="sub-text"><b>Spend an eternity together!</b> Enjoy daily life with Natsuki</p>
-				<span i18n="small-text" class="small">Make each other happy</span>
+				<canvas class="snow full canvas-background"></canvas>
 			</div>
 		</div>
 
-		<div i18n-group="she-is-beautiful" class="section">
-			<div class="left">
-				<h2 i18n="large-text">A lovely smile.<br /> Two magnificent eyes.<br /> A stunning appearance.</h2>
-				<p i18n="sub-text">She's <b>a pro</b></p>
-			</div>
-
-			<div class="right image">
-				<picture>
-					<source srcset="img/smug_nat.png" type="image/png">
-					<img src="img/smug_nat.png" alt="" height="500"/>
-				</picture>
-			</div>
-		</div>
-
-		<div i18n-group="end-the-waifu-war" class="section">
-			<div class="left image">
-				<picture>
-					<source srcset="img/baka_nat.png" type="image/png">
-					<img src="img/baka_nat.png" alt="" height="500"/>
-				</picture>
-			</div>
-
-			<div class="right">
-				<h2 i18n="large-text">A fanged sweetheart spending time just with you.</h2>
-				<p i18n="sub-text">Let's give her the happy ending <b>she deserves</b>!</p>
-			</div>
-		</div>
-
-		<div class="section">
-			<div class="center" i18n-group="the-others-are-trash">
-				<h2 i18n="large-text">Brought to you by</h2>
-				<p i18n="sub-text">Some real important dummies:</p>
-				<div i18n-group="the-others-are-trash" class="compare">
-					<div i18n-group="blizzardsev" class="character blizz">
-						<picture>
-							<source srcset="img/portraits/blizzpfp.png" type="image/webp">
-							<img src="img/portraits/blizzpfp.png" />
-						</picture>
-						<div class="name">
-							<span i18n="name">Blizzardsev</span>
-							<div class="small">(he/they)</div>
-							<div i18n="name-detail" class="small">
-								Gives Natsu uppies
-							</div>
-						</div>
-						<ul i18n-group="description">
-							<li i18n="argument-1"><b>Lead Writer</b></li>
-							<li i18n="argument-2">A passionate writer and programmer striving to help make <i>Just Natsuki</i> the best it can be</li>
-						</ul>
-					</div>
-
-					<div i18n-group="multimokia" class="character multi">
-						<picture>
-							<source srcset="img/portraits/multipfp.png" type="image/webp">
-							<img src="img/portraits/multipfp.png" />
-						</picture>
-						<div class="name">
-							<span i18n="name">multimokia</span>
-							<div class="small">(she/they)</div>
-							<div i18n="name-detail" class="small">
-								Overcomplicator extraordinare
-							</div>
-						</div>
-						<ul i18n-group="description">
-							<li i18n="argument-1"><b>Lead Programmer</b></li>
-							<li i18n="argument-2">There's no engineering like overengineering<br/><br/>I just do the music</li>
-						</ul>
-					</div>
-
-					<div i18n-group="jmo" class="character jmo">
-						<picture>
-							<source srcset="img/webp/portraits/Nemu_Dork.webp" type="image/webp">
-							<img src="img/portraits/Nemu_Dork.png" />
-						</picture>
-						<div class="name">
-							<span i18n="name">Prof. JMO</span>
-							<div class="small">(they/them)</div>
-							<div i18n="name-detail" class="small">
-								Hope is the Page of the Future
-							</div>
-						</div>
-						<ul i18n-group="description">
-							<li i18n="argument-1"><b>Lead Artist</b></li>
-							<li i18n="argument-2">Hi!<br/>Just a multi-collaborative dev here who's passionate about and loves what they do</li>
-						</ul>
-					</div>
-
-					<div i18n-group="daisy" class="character daisy">
-						<picture>
-							<source srcset="img/portraits/DaisyMaskless.png" type="image/png">
-							<img src="img/portraits/DaisyMaskless.png" />
-						</picture>
-						<div class="name">
-							<span i18n="name">Daisy</span>
-							<div class="small">(she/her)</div>
-							<div i18n="name-detail" class="small">
-								The catgirl that started it all...
-							</div>
-						</div>
-						<ul i18n-group="description">
-							<li i18n="argument-1"><b>Team Lead, Overseer, Writer</b></li>
-							<li i18n="argument-2">Nobody special really, I'm just a random girl who started a mod one day. And now, it's grown into something even better than I could've hoped. Looking forward to working to make this mod everything it still can be.</li>
-						</ul>
-					</div>
-
-					<div i18n-group="lewnatic" class="character lewnatic">
-						<picture>
-							<source srcset="img/portraits/lewnkot.png" type="image/webp">
-							<img src="img/portraits/lewnkot.png" />
-						</picture>
-						<div class="name">
-							<span i18n="name">Lewnatic</span>
-							<div class="small">(she/her)</div>
-							<div i18n="name-detail" class="small">
-								Two braincells on overtime
-							</div>
-						</div>
-						<ul i18n-group="description">
-							<li i18n="argument-1"><b>Writer</b></li>
-							<li i18n="argument-2">Local fanfiction addict goes pro</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="section">
-			<div class="center" i18n-group="retired-devs">
-				<h2 i18n="large-text">And we wouldn't be here without these guys</h2>
-				<p i18n="sub-text">Thanks for helping our development!</p>
-				<div i18n-group="the-others-are-trash" class="compare">
-					<div i18n-group="spaghetsie" class="character spaghetsie">
-						<picture>
-							<source srcset="img/webp/portraits/spaghet.webp" type="image/webp">
-							<img src="img/portraits/spaghet.png" />
-						</picture>
-						<div class="name">
-							<span i18n="name">Spaghetsie</span>
-							<div class="small">(he/they)</div>
-							<div i18n="name-detail" class="small">
-								Local spaghetti monster
-							</div>
-						</div>
-						<ul i18n-group="description">
-							<li i18n="argument-1"><b>Programmer</b></li>
-							<li i18n="argument-2">I don't know what I'm doing</li>
-						</ul>
-					</div>
-
-					<div i18n-group="briar" class="character briaryoung">
-						<picture>
-							<source srcset="img/portraits/briarpfp.png" type="image/png">
-							<img src="img/portraits/briarpfp.png" />
-						</picture>
-						<div class="name">
-							<span i18n="name">Briar</span>
-							<div class="small">(he/they)</div>
-							<div i18n="name-detail" class="small">
-								Master qebfitter
-							</div>
-						</div>
-						<ul i18n-group="description">
-							<li i18n="argument-1"><b>Artist</b></li>
-							<li i18n="argument-2">Hello~<br/>My name is Briar, I do artwork for the mod!</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div i18n-group="fanarts" class="section">
-			<div class="left image slideshow">
-				<picture class="shown">
-					<source srcset="img/previews/1_talk_menu.png" type="image/png">
-					<img height="500px" src="img/previews/1_talk_menu.png" alt="" />
-				</picture>
-				<picture>
-					<source srcset="img/previews/2_compliment_menu.png" type="image/png">
-					<img height="500px" src="img/previews/2_compliment_menu.png" alt="" />
-				</picture>
-				<picture>
-					<source srcset="img/previews/3_music_menu.png" type="image/png">
-					<img height="500px" src="img/previews/3_music_menu.png" alt="" />
-				</picture>
-				<picture>
-					<source srcset="img/previews/4_snap.png" type="image/png">
-					<img height="500px" src="img/previews/4_snap.png" alt="" />
-				</picture>
-				<picture>
-					<source srcset="img/previews/5_fancy_dress.png" type="image/png">
-					<img height="500px" src="img/previews/5_fancy_dress.png" alt="" />
-				</picture>
-				<picture>
-					<source srcset="img/previews/6_pjs.png" type="image/png">
-					<img height="500px" src="img/previews/6_pjs.png" alt="" />
-				</picture>
-				<picture>
-					<source srcset="img/previews/7_talk.png" type="image/png">
-					<img height="500px" src="img/previews/7_talk.png" alt="" />
-				</picture>
-				<picture>
-					<source srcset="img/previews/8_baka.png" type="image/png">
-					<img height="500px" src="img/previews/8_baka.png.png" alt="" />
-				</picture>
-				<picture>
-					<source srcset="img/previews/9_goofball.png" type="image/png">
-					<img height="500px" src="img/previews/9_goofball.png" alt="" />
-				</picture>
-				<picture>
-					<source srcset="img/previews/10_annoys.png" type="image/png">
-					<img height="500px" src="img/previews/10_annoys.png" alt="" />
-				</picture>
-				<picture>
-					<source srcset="img/previews/11_ugh.png" type="image/png">
-					<img height="500px" src="img/previews/11_ugh.png" alt="" />
-				</picture>
-				<picture>
-					<source srcset="img/previews/12_good_taste.png" type="image/png">
-					<img height="500px" src="img/previews/12_good_taste.png" alt="" />
-				</picture>
-				<picture>
-					<source srcset="img/previews/13_xmas.png" type="image/png">
-					<img height="500px" src="img/previews/13_xmas.png" alt="" />
-				</picture>
-				<picture>
-					<source srcset="img/previews/99_meta.png" type="image/png">
-					<img height="500px" src="img/previews/99_meta.png" alt="" />
-				</picture>
-			</div>
-
-			<div class="right">
-				<h2 i18n="large-text">You can't deny her cuteness.</h2>
-				<p i18n="sub-text">Just look at this, this is adorable. <noscript>Slideshow requires JavaScript.</noscript></p>
-			</div>
-		</div>
-
-		<div i18n-group="pope-francis" class="section background pope-francis">
-			<div class="back-overlay"></div>
-			<div class="center">
-				<h2 i18n="large-text">Open source, and always will be.</h2>
-				<p i18n="sub-text">
-					All code, all visible. Honesty is our mantra.
-				</p>
-			</div>
-		</div>
-
-		<div i18n-group="flipping-cards" class="section">
-			<div class="center">
-				<h2 i18n="large-text">What can I expect from Just Natsuki?</h2>
-				<p i18n="sub-text">
-					<span class="small">Click on a card to learn more...</span>
-				</p>
-
-				<div i18n-group="cards" id="card-container">
-					<span>
-						<input type="checkbox" id="gabriel-toogle" class="card-toogle" />
-						<label for="gabriel-toogle" i18n-group="gabriel" class="card gabriel">
-							<div i18n="question" class="question">
-								Companionship
-							</div>
-							<div i18n="answer" class="answer">
-								Grow and develop a relationship with the tsundere we all know and love... <b class="natsu-pink">with no strings attached</b>.
-							</div>
-						</label>
-					</span>
-
-					<span>
-						<input type="checkbox" id="vigne-toogle" class="card-toogle" />
-						<label for="vigne-toogle" i18n-group="vigne" class="card vigne">
-							<div i18n="question" class="question">
-								Regular updates
-							</div>
-							<div i18n="answer" class="answer">
-								<b>Lovingly crafted</b> and tested by an enthusiastic and passionate team with ample experience in DDLC modding.
-							</div>
-						</label>
-					</span>
-
-					<span>
-						<input type="checkbox" id="raphiel-toogle" class="card-toogle" />
-						<label for="raphiel-toogle" i18n-group="raphiel" class="card raphiel">
-							<div i18n="question" class="question">
-								Community
-							</div>
-							<div i18n="answer" class="answer">
-								Join a <b>growing community</b>, discover new friends and participate in making a better mod for everyone.
-							</div>
-						</label>
-					</span>
-
-					<span>
-						<input type="checkbox" id="satania-toogle" class="card-toogle" />
-						<label for="satania-toogle" i18n-group="satania" class="card satania">
-							<div i18n="question" class="question">
-								Free, forever
-							</div>
-							<div class="answer">
-								No payments, no store. <b>Just Natsuki</b>.
-							</div>
-						</label>
-					</span>
-				</div>
-			</div>
-		</div>
-
-		<div i18n-group="end" class="main end">
-			<div class="back-overlay"></div>
-
-			<!--TODO: We'll re-enable this when we have a release! We should also list the version history somewhere.-->
-			<!-- <div class="title">
-				<h1 i18n="large-text">What are you waiting for?</h1>
-				<h2 i18n="sub-text">
-                    <a href="https://github.com/Just-Natsuki-Team/NatsukiModDev/releases/latest/">
-                        Download the mod already!
-                    </a>
-                </h2>
-			</div> -->
-
-            <div class="title">
-				<h1 i18n="large-text">We're not quite ready yet...</h1>
-				<h2 i18n="sub-text">
-                    <a href="https://github.com/Just-Natsuki-Team/NatsukiModDev/">
-                        But why not check out our GitHub?
-                    </a>
-                </h2>
-			</div>
-
-			<div class="footer">
-				<a href="https://github.com/Just-Natsuki-Team/NatsukiModDev">
+		<div class="scroll">
+			<div i18n-group="become-a-satania-follower" class="section">
+				<div class="left image">
 					<picture>
-						<source srcset="img/webp/github_link.webp" type="image/webp">
-						<img src="img/github_link.png" alt="" />
+						<source srcset="img/pouty_nat.png" type="image/png">
+						<img src="img/pouty_nat.png" alt="" height="500"/>
 					</picture>
-				</a>
+				</div>
+
+				<div class="right">
+					<h2 i18n="large-text">Introducing: Just Natsuki!</h2>
+					<p i18n="sub-text"><b>Spend an eternity together!</b> Enjoy daily life with Natsuki</p>
+					<span i18n="small-text" class="small">Make each other happy</span>
+				</div>
 			</div>
 
-			<canvas class="snow full canvas-background"></canvas>
+			<div i18n-group="she-is-beautiful" class="section">
+				<div class="left">
+					<h2 i18n="large-text">A lovely smile.<br /> Two magnificent eyes.<br /> A stunning appearance.</h2>
+					<p i18n="sub-text">She's <b>a pro</b></p>
+				</div>
+
+				<div class="right image">
+					<picture>
+						<source srcset="img/smug_nat.png" type="image/png">
+						<img src="img/smug_nat.png" alt="" height="500"/>
+					</picture>
+				</div>
+			</div>
+
+			<div i18n-group="end-the-waifu-war" class="section">
+				<div class="left image">
+					<picture>
+						<source srcset="img/baka_nat.png" type="image/png">
+						<img src="img/baka_nat.png" alt="" height="500"/>
+					</picture>
+				</div>
+
+				<div class="right">
+					<h2 i18n="large-text">A fanged sweetheart spending time just with you.</h2>
+					<p i18n="sub-text">Let's give her the happy ending <b>she deserves</b>!</p>
+				</div>
+			</div>
+
+			<!--Current team members-->
+			<div class="section">
+				<div class="center" i18n-group="the-others-are-trash">
+					<h2 i18n="large-text">Brought to you by</h2>
+					<p i18n="sub-text">Some real important dummies</p>
+					<div i18n-group="the-others-are-trash" class="compare">
+						<!--Blizzardsev-->
+						<div i18n-group="blizzardsev" class="character blizz">
+							<picture>
+								<source srcset="img/portraits/blizzpfp.png" type="image/webp">
+								<img src="img/portraits/blizzpfp.png" />
+							</picture>
+							<div class="name">
+								<span i18n="name">Blizzardsev</span>
+								<div class="small">(he/they)</div>
+								<div i18n="name-detail" class="small">
+									Gives Natsu uppies
+								</div>
+							</div>
+							<ul i18n-group="description">
+								<li i18n="argument-1"><b>Lead Writer, Lead Developer</b></li>
+								<li i18n="argument-2">A passionate writer and programmer striving to help make <i>Just Natsuki</i> the best it can be.</li>
+							</ul>
+						</div>
+						<!--Nemu-->
+						<div i18n-group="jmo" class="character jmo">
+							<picture>
+								<source srcset="img/webp/portraits/Nemu_Dork.webp" type="image/webp">
+								<img src="img/portraits/Nemu_Dork.png" />
+							</picture>
+							<div class="name">
+								<span i18n="name">Prof. JMO</span>
+								<div class="small">(they/them)</div>
+								<div i18n="name-detail" class="small">
+									Hope is the Page of the Future
+								</div>
+							</div>
+							<ul i18n-group="description">
+								<li i18n="argument-1"><b>Lead Artist, Lead Developer</b></li>
+								<li i18n="argument-2">Hi!<br/>Just a multi-collaborative dev here who's passionate about and loves what they do!</li>
+							</ul>
+						</div>
+						<!--Daisy-->
+						<div i18n-group="daisy" class="character daisy">
+							<picture>
+								<source srcset="img/portraits/DaisyMaskless.png" type="image/png">
+								<img src="img/portraits/DaisyMaskless.png" />
+							</picture>
+							<div class="name">
+								<span i18n="name">Daisy</span>
+								<div class="small">(she/her)</div>
+								<div i18n="name-detail" class="small">
+									The catgirl that started it all...
+								</div>
+							</div>
+							<ul i18n-group="description">
+								<li i18n="argument-1"><b>Team Lead, Overseer, Writer</b></li>
+								<li i18n="argument-2">Nobody special really, I'm just a random girl who started a mod one day. And now, it's grown into something even better than I could've hoped. Looking forward to working to make this mod everything it still can be.</li>
+							</ul>
+						</div>
+						<!--Lewnatic-->
+						<div i18n-group="lewnatic" class="character lewnatic">
+							<picture>
+								<source srcset="img/portraits/lewnkot.png" type="image/webp">
+								<img src="img/portraits/lewnkot.png" />
+							</picture>
+							<div class="name">
+								<span i18n="name">Lewnatic</span>
+								<div class="small">(she/her)</div>
+								<div i18n="name-detail" class="small">
+									Two braincells on overtime
+								</div>
+							</div>
+							<ul i18n-group="description">
+								<li i18n="argument-1"><b>Writer</b></li>
+								<li i18n="argument-2">Local fanfiction addict goes pro!</li>
+							</ul>
+						</div>
+						<!--RaionArt-->
+						<div i18n-group="raionart" class="character raionart">
+							<picture>
+								<source srcset="img/portraits/raionpfp.png" type="image/webp">
+								<img src="img/portraits/raionpfp.png" />
+							</picture>
+							<div class="name">
+								<span i18n="name">RaionArt</span>
+								<div class="small">(she/her)</div>
+								<div i18n="name-detail" class="small">
+									
+								</div>
+							</div>
+							<ul i18n-group="description">
+								<li i18n="argument-1"><b>Artist</b></li>
+								<li i18n="argument-2">The DDLC artist who draws all dokis with nice thighs tries to make Natsuki's day better now!</li>
+							</ul>
+						</div>
+						<!--Trident-->
+						<div i18n-group="trident12" class="character trident12">
+							<picture>
+								<source srcset="img/portraits/tridentpfp.png" type="image/webp">
+								<img src="img/portraits/tridentpfp.png" />
+							</picture>
+							<div class="name">
+								<span i18n="name">Trident_12</span>
+								<div class="small">(he/his)</div>
+								<div i18n="name-detail" class="small">
+								</div>
+							</div>
+							<ul i18n-group="description">
+								<li i18n="argument-1"><b>Programmer</b></li>
+								<li i18n="argument-2">TODO</li>
+							</ul>
+						</div>
+						<!--Dankoismad-->
+						<div i18n-group="dankoismad" class="character dankoismad">
+							<picture>
+								<source srcset="img/portraits/dankopfp.png" type="image/webp">
+								<img src="img/portraits/dankopfp.png" />
+							</picture>
+							<div class="name">
+								<span i18n="name">dankoismad</span>
+								<div class="small">(he/his)</div>
+								<div i18n="name-detail" class="small">
+								</div>
+							</div>
+							<ul i18n-group="description">
+								<li i18n="argument-1"><b>Moderator</b></li>
+								<li i18n="argument-2">TODO</li>
+							</ul>
+						</div>
+						<!--Obsidian Knife-->
+						<div i18n-group="obsidianknife" class="character obsidianknife">
+							<picture>
+								<source srcset="img/portraits/obsidianknifepfp.png" type="image/webp">
+								<img src="img/portraits/obsidianknifepfp.png" />
+							</picture>
+							<div class="name">
+								<span i18n="name">Obsidian<br>Knife</span>
+								<div class="small">(he/his)</div>
+								<div i18n="name-detail" class="small">
+								</div>
+							</div>
+							<ul i18n-group="description">
+								<li i18n="argument-1"><b>Moderator</b></li>
+								<li i18n="argument-2">Just some guy who's an inspiring Indie Game Developer with an affinity for psychology, poetry, mental health and wellness.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--Retirees-->
+			<div class="section">
+				<div class="center" i18n-group="retired-devs">
+					<h2 i18n="large-text">And we wouldn't be here without these guys</h2>
+					<p i18n="sub-text">Thanks for helping our development!</p>
+					<div i18n-group="the-others-are-trash" class="compare">
+						<div i18n-group="spaghetsie" class="character spaghetsie">
+							<picture>
+								<source srcset="img/webp/portraits/spaghet.webp" type="image/webp">
+								<img src="img/portraits/spaghet.png" />
+							</picture>
+							<div class="name">
+								<span i18n="name">Spaghetsie</span>
+								<div class="small">(he/they)</div>
+								<div i18n="name-detail" class="small">
+									Local spaghetti monster
+								</div>
+							</div>
+							<ul i18n-group="description">
+								<li i18n="argument-1"><b>Programmer (retired)</b></li>
+								<li i18n="argument-2">I don't know what I'm doing</li>
+							</ul>
+						</div>
+						<div i18n-group="briar" class="character briaryoung">
+							<picture>
+								<source srcset="img/portraits/briarpfp.png" type="image/png">
+								<img src="img/portraits/briarpfp.png" />
+							</picture>
+							<div class="name">
+								<span i18n="name">Briar</span>
+								<div class="small">(he/they)</div>
+								<div i18n="name-detail" class="small">
+									Master qebfitter
+								</div>
+							</div>
+							<ul i18n-group="description">
+								<li i18n="argument-1"><b>Artist (retired)</b></li>
+								<li i18n="argument-2">Hello~<br/>My name is Briar, I do artwork for the mod!</li>
+							</ul>
+						</div>
+						<div i18n-group="multimokia" class="character multi">
+							<picture>
+								<source srcset="img/portraits/multipfp.png" type="image/webp">
+								<img src="img/portraits/multipfp.png" />
+							</picture>
+							<div class="name">
+								<span i18n="name">multimokia</span>
+								<div class="small">(she/they)</div>
+								<div i18n="name-detail" class="small">
+									Overcomplicator extraordinare
+								</div>
+							</div>
+							<ul i18n-group="description">
+								<li i18n="argument-1"><b>Lead Programmer (retired)</b></li>
+								<li i18n="argument-2">There's no engineering like overengineering<br/><br/>I just do the music</li>
+							</ul>
+						</div>
+						<div i18n-group="unsleppen" class="character unsleppen">
+							<picture>
+								<source srcset="img/portraits/unsleppenpfp.png" type="image/webp">
+								<img src="img/portraits/unsleppenpfp.png" />
+							</picture>
+							<div class="name">
+								<span i18n="name">Unsleppen</span>
+								<div class="small">(he/his)</div>
+								<div i18n="name-detail" class="small">
+								</div>
+							</div>
+							<ul i18n-group="description">
+								<li i18n="argument-1"><b>Programmer (retired)</b></li>
+								<li i18n="argument-2">
+									Passionate all-round programmer.
+									<br><br>
+									Game developer.
+									<br><br>
+									Piano/kazoo enthusiast.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--Previews-->
+			<div i18n-group="fanarts" class="section">
+				<div class="left image slideshow">
+					<picture class="shown">
+						<source srcset="img/previews/1_talk_menu.png" type="image/png">
+						<img height="500px" src="img/previews/1_talk_menu.png" alt="" />
+					</picture>
+					<picture>
+						<source srcset="img/previews/2_compliment_menu.png" type="image/png">
+						<img height="500px" src="img/previews/2_compliment_menu.png" alt="" />
+					</picture>
+					<picture>
+						<source srcset="img/previews/3_music_menu.png" type="image/png">
+						<img height="500px" src="img/previews/3_music_menu.png" alt="" />
+					</picture>
+					<picture>
+						<source srcset="img/previews/4_snap.png" type="image/png">
+						<img height="500px" src="img/previews/4_snap.png" alt="" />
+					</picture>
+					<picture>
+						<source srcset="img/previews/5_fancy_dress.png" type="image/png">
+						<img height="500px" src="img/previews/5_fancy_dress.png" alt="" />
+					</picture>
+					<picture>
+						<source srcset="img/previews/6_pjs.png" type="image/png">
+						<img height="500px" src="img/previews/6_pjs.png" alt="" />
+					</picture>
+					<picture>
+						<source srcset="img/previews/7_talk.png" type="image/png">
+						<img height="500px" src="img/previews/7_talk.png" alt="" />
+					</picture>
+					<picture>
+						<source srcset="img/previews/8_baka.png" type="image/png">
+						<img height="500px" src="img/previews/8_baka.png.png" alt="" />
+					</picture>
+					<picture>
+						<source srcset="img/previews/9_goofball.png" type="image/png">
+						<img height="500px" src="img/previews/9_goofball.png" alt="" />
+					</picture>
+					<picture>
+						<source srcset="img/previews/10_annoys.png" type="image/png">
+						<img height="500px" src="img/previews/10_annoys.png" alt="" />
+					</picture>
+					<picture>
+						<source srcset="img/previews/11_ugh.png" type="image/png">
+						<img height="500px" src="img/previews/11_ugh.png" alt="" />
+					</picture>
+					<picture>
+						<source srcset="img/previews/12_good_taste.png" type="image/png">
+						<img height="500px" src="img/previews/12_good_taste.png" alt="" />
+					</picture>
+					<picture>
+						<source srcset="img/previews/13_xmas.png" type="image/png">
+						<img height="500px" src="img/previews/13_xmas.png" alt="" />
+					</picture>
+					<picture>
+						<source srcset="img/previews/99_meta.png" type="image/png">
+						<img height="500px" src="img/previews/99_meta.png" alt="" />
+					</picture>
+				</div>
+
+				<div class="right">
+					<h2 i18n="large-text">You can't deny her cuteness.</h2>
+					<p i18n="sub-text">Just look at this, this is adorable. <noscript>Slideshow requires JavaScript.</noscript></p>
+				</div>
+			</div>
+
+			<div i18n-group="pope-francis" class="section background pope-francis">
+				<div class="back-overlay"></div>
+				<div class="center">
+					<h2 i18n="large-text">Open source, and always will be.</h2>
+					<p i18n="sub-text">
+						All code, all visible. Honesty is our mantra.
+					</p>
+				</div>
+			</div>
+
+			<div i18n-group="flipping-cards" class="section">
+				<div class="center">
+					<h2 i18n="large-text">What can I expect from Just Natsuki?</h2>
+					<p i18n="sub-text">
+						<span class="small">Click on a card to learn more...</span>
+					</p>
+
+					<div i18n-group="cards" id="card-container">
+						<span>
+							<input type="checkbox" id="gabriel-toogle" class="card-toogle" />
+							<label for="gabriel-toogle" i18n-group="gabriel" class="card gabriel">
+								<div i18n="question" class="question">
+									Companionship
+								</div>
+								<div i18n="answer" class="answer">
+									Grow and develop a relationship with the tsundere we all know and love... <b class="natsu-pink">with no strings attached</b>.
+								</div>
+							</label>
+						</span>
+
+						<span>
+							<input type="checkbox" id="vigne-toogle" class="card-toogle" />
+							<label for="vigne-toogle" i18n-group="vigne" class="card vigne">
+								<div i18n="question" class="question">
+									Regular updates
+								</div>
+								<div i18n="answer" class="answer">
+									<b>Lovingly crafted</b> and tested by an enthusiastic and passionate team with ample experience in DDLC modding.
+								</div>
+							</label>
+						</span>
+
+						<span>
+							<input type="checkbox" id="raphiel-toogle" class="card-toogle" />
+							<label for="raphiel-toogle" i18n-group="raphiel" class="card raphiel">
+								<div i18n="question" class="question">
+									Community
+								</div>
+								<div i18n="answer" class="answer">
+									Join a <b>growing community</b>, discover new friends and participate in making a better mod for everyone.
+								</div>
+							</label>
+						</span>
+
+						<span>
+							<input type="checkbox" id="satania-toogle" class="card-toogle" />
+							<label for="satania-toogle" i18n-group="satania" class="card satania">
+								<div i18n="question" class="question">
+									Free, forever
+								</div>
+								<div class="answer">
+									No payments, no store. <b>Just Natsuki</b>.
+								</div>
+							</label>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div i18n-group="end" class="main end">
+				<div class="back-overlay"></div>
+				<div class="title">
+					<h1 i18n="large-text">What are you waiting for?</h1>
+					<h2 i18n="sub-text">
+						<a href="https://github.com/Just-Natsuki-Team/NatsukiModDev/releases/latest/">
+							Download now!
+						</a>
+					</h2>
+				</div>
+				<div class="footer">
+					<a href="https://github.com/Just-Natsuki-Team/NatsukiModDev">
+						<picture>
+							<source srcset="img/webp/github_link.webp" type="image/webp">
+							<img src="img/github_link.png" alt="" />
+						</picture>
+					</a>
+				</div>
+				<canvas class="snow full canvas-background"></canvas>
+			</div>
 		</div>
-	</div>
-
-	<script src="script.js"></script>
-</body>
-
+		<script src="script.js"></script>
+	</body>
 </html>
