@@ -82,6 +82,8 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet" crossorigin="anonymous" />
 		<link href="style.css" rel="stylesheet" />
 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 		<link rel="preload" href="img/happy_nat.png" as="image" />
 	</head>
 	<body>
@@ -97,7 +99,6 @@
 				<div class="title">
 					<h1 i18n="name" id="logo">Natsuki</h1>
 					<h2 i18n="best-waifu-ever">The biggest qeeb. <b>Ever.</b></h2>
-
 					<div class="button-container">
 						<span>
 							<a i18n="join-discord" class="button discord" href="https://discord.gg/sFxdsCBh94"><i class="fab fa-discord"></i>Join the Discord</a><br />
@@ -105,14 +106,6 @@
 								<span id="discord-number"></span> members
 							</span>
 						</span>
-
-						<!-- <span>
-							<a i18n="join-reddit" class="button reddit" href="https://reddit.com/r/satania"><i class="fab fa-reddit-alien"></i>Join the Subreddit</a><br />
-							<span id="reddit-count" i18n="reddit-count">
-								<span id="reddit-number"></span> subscribers
-							</span>
-						</span> -->
-
 						<br />
 
 						<span i18n="language-warning" class="small translate-only">(This community uses English as its primary language)</span>
@@ -233,6 +226,11 @@
 			<!--Current team members-->
 			<div class="section">
 				<div class="center" i18n-group="the-others-are-trash">
+					<picture >
+						<source srcset="img/logos/jn_1-0-0_logo_chibi.png" type="image/png">
+						<img class="animate__animated animate__pulse animate__repeat animate__slower animate__infinite" src="img/logos/jn_1-0-0_logo_chibi.png" alt="" height="500" style="margin-bottom: -75px;"/>
+					</picture>
+					<br>
 					<h2 i18n="large-text">Brought to you by</h2>
 					<p i18n="sub-text">Some real important dummies</p>
 					<div i18n-group="the-others-are-trash" class="compare">
@@ -336,11 +334,18 @@
 								<span i18n="name">Trident_12</span>
 								<div class="small">(he/his)</div>
 								<div i18n="name-detail" class="small">
+									Commander of the Pythonian entity.
 								</div>
 							</div>
 							<ul i18n-group="description">
 								<li i18n="argument-1"><b>Programmer</b></li>
-								<li i18n="argument-2">TODO</li>
+								<li i18n="argument-2">
+									Professional enginer and wheel re-inventor.
+									Cooks with code, hopes, and dreams.
+									I write code with reckless abandon, and hope it works.
+									Most of the time, it does!
+									The other 40% of the time, it crashes.
+								</li>
 							</ul>
 						</div>
 						<!--Dankoismad-->
@@ -604,7 +609,7 @@
 				<div class="back-overlay"></div>
 				<div class="title">
 					<h1 i18n="large-text">What are you waiting for?</h1>
-					<h2 i18n="sub-text">
+					<h2 i18n="sub-text" class="animate__animated animate__pulse animate__repeat animate__infinite">
 						<a href="https://github.com/Just-Natsuki-Team/NatsukiModDev/releases/latest/">
 							Download now!
 						</a>
